@@ -16,7 +16,7 @@ During the analysis of the email, we identified the user who sent the email and 
     2- document : Product_details.docm
 
 
-[![email.png](https://i.postimg.cc/Gpxs9f2c/email.png)](https://postimg.cc/zL3fc0KM)
+![email](https://github.com/user-attachments/assets/3a918e61-9b5d-414c-b2a2-f81da4c3b1f3)
 
 
 
@@ -24,7 +24,7 @@ During the analysis of the email, we identified the user who sent the email and 
 
 
 
-[![Product.png](https://i.postimg.cc/tRZWN2vz/Product.png)](https://postimg.cc/hhnXSbBJ)
+![Product](https://github.com/user-attachments/assets/6c5fb5f5-58b9-4762-a2dd-c2b06f3b5fd5)
 
 
 We obtained this output:
@@ -34,7 +34,7 @@ We obtained this output:
 
 1. When checking the reputation of the domain bericht-belastingdienst.com, we found it to be very malicious.
 
-[![virustotal.png](https://i.postimg.cc/CKzWx3J8/virustotal.png)](https://postimg.cc/d7cWWSbQ)
+![virustotal](https://github.com/user-attachments/assets/0df2e53a-ba87-4b64-8d26-3bd5420be93b)
 And here, we obtained the first part of the flag.
 
 `CSP{5om3tim35_th3_thing5`
@@ -44,13 +44,13 @@ And here, we obtained the first part of the flag.
    
    
 
-[![github.png](https://i.postimg.cc/XJ5mw9R7/github.png)](https://postimg.cc/9RWL2wXv)
+![github](https://github.com/user-attachments/assets/12a503ff-2b4b-488f-ba71-851f9a74c61f)
 3. So, he has a GitHub account and a repository named `Important`
    
 
-[![github2.png](https://i.postimg.cc/pd43hs16/github2.png)](https://postimg.cc/d7R5gjF2)
+![github2](https://github.com/user-attachments/assets/0e78a70a-74b0-4e17-9448-0ee7c53229e3)
 
-[![github3.png](https://i.postimg.cc/T1XSQpxj/github3.png)](https://postimg.cc/62YYp6yT)
+![github3](https://github.com/user-attachments/assets/22ec982a-98ca-4f6c-a1bf-18b5e838de6a)
 4.  When you enter GitHub, you don't find the flag immediately. You need to check the history of the comments to find it.
 
    `_4r3_34Sy_but_l4h_yhdin4}`
