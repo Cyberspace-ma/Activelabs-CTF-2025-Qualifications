@@ -8,11 +8,11 @@ Welcome to the **Activelabs CTF 2025**! This Capture the Flag event brings you a
 
 | Category    | Challenge         | Points | Solves | Author(s) |
 | ----------- | ----------------- | ------ | ------ | --------- |
-| **Web**     | Authentication    | 467    | 3      | 0xY47     |
-|             | Notes             | 262    | 16     | 0xY47     |
-|             | Sada9at           | 101    | 30     | 0xY47     |
-|             | Secret Notes      | 265    | 15     | 0xY47     |
-|             | SecureDash        | 272    | 13     | 0xY47     |
+| **Web**     | [Authentication](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Web/Authentication)    | 467    | 3      | 0xY47     |
+|             | [Notes](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Web/Notes)             | 262    | 16     | 0xY47     |
+|             | [Sada9at](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Web/Sada9at)           | 101    | 30     | 0xY47     |
+|             | [Secret Notes](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Web/Secret%20Notes)      | 265    | 15     | 0xY47     |
+|             | [SecureDash](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Web/SecureDash)        | 272    | 13     | 0xY47     |
 | **MISC**    | ASN               | 180    | 9      | 0xY47     |
 |             | Cartouches        | 247    | 6      | 0xY47     |
 |             | Corrupted-QR      | 417    | 3      | 0xY47     |
@@ -48,7 +48,7 @@ Welcome to the **Activelabs CTF 2025**! This Capture the Flag event brings you a
 
 - [Cryptography](#)
 - [DFIR](#)
-- [Web](#)
+- [Web](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Web)
 - [MISC](#)
 - [OSINT](#)
 - [PWN](#)
@@ -102,24 +102,38 @@ This note system is said to be _unbreakable_… but is it really? Your mission:
 
 *Source code : https://mega.nz/folder/MMpyBLSJ#QQhzGzx9O4_eQx-lBamVDQ*
 
+*Writeup : https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Web/Notes*
+
 ### Sada9at
 
 A straightforward web challenge to help you grab some easy points—let’s see how fast you can solve it!
 
+*Writeup : https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Web/Sada9at*
+
+
 ### Authentication
 
 My website boasts an _secure_ authentication system—so secure that even industry giants use it! Can you find a way in?
+
+*Writeup : https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Web/Authentication*
+
 
 ### Secret Notes
 
 This Time my note system is _unbreakable_… but is it really?
 
 *Source code : https://mega.nz/folder/ld4jkLYD#J8xmpUdwkEL0jbtPGbnAzA*
+
+*Writeup : https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Web/Secret%20Notes*
+
 ### Secure Dash
 
 Welcome to SecureDash - a secure dashboard for managing user preferences. Or is it? The developers of this application claim it's secure, but there might be vulnerabilities hidden in the code.
 
 *Source code : https://mega.nz/folder/0VRwjZba#f_ua6_w7N2LEceqR1_lRkw*
+
+*Writeup : https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Web/SecureDash*
+
 
 ---
 
