@@ -1,18 +1,18 @@
-### SMILAH :
+### InfraBroken :
 
 # Description :
 
-> An employee at a mid-sized tech company has gone rogue. They're under pressure from a competitor or a foreign entity to steal sensitive company data—maybe intellectual property, financial data, or customer lists !!!.
+> An unknown event occurred on my system. I discovered my data on the dark web, but I have no idea how it was leaked from my server. When I checked the outgoing data, I found nothing suspicious. I'm completely confused about this situation and need you to investigate the incident to determine the source of this anomaly.
 
-> Author : MR_Togoo
+> Author : Mr_Togoo
 
-> Attachments : [network.pcapng](https://www.mediafire.com/file/tgq5ezu0c7zkvnd/SMILAH.pcapng/file)
+> Attachments : [InfraBroken.rar](https://drive.google.com/file/d/1LjQYu_dLOUHKDN_MdJtr_V-zNLEAdQvo/view?usp=sharing) 'InfraBroken.ad1' and 'network.pcapng'
 
-During the analysis of the pcap file, we identified a conversation between Mr_Togoo and D@rkshell:
+During the analysis of InfraBroken.ad1, we identified a PowerShell script named Fra9syam.ps1:
+
 
     1 - Now, we have some data exfiltrated from DNS to 199.36.158.100 with the query "$OutputData.ramadankarim.ma".
-    2 - And exfiltrate this OutputData using the malware SuhoorSpy.exe from the following path:  
-    
+    2 - And exfiltrate this OutputData using the malware SuhoorSpy.exe from the following path:
 `C:\Users\MrTogoo\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\SuhoorSpy.exe`
 
 
