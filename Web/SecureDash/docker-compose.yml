@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  securedash:
+    build: .
+    ports:
+      - "5601-5650:60000"
+    deploy:
+      replicas: 50
+    restart: always
+    volumes:
+      - ./templates:/app/templates
+      - ./static:/app/static

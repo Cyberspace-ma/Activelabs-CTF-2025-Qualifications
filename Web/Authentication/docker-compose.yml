@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  authentication:
+    build: .
+    ports:
+      - "5801:8000"
+    deploy:
+      replicas: 1
+    restart: always
+    volumes:
+      - ./users.db:/app/users.db
+      - ./templates:/app/templates
+      - ./static:/app/static

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureDash - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <div class="user-info">
+                <img src="{{ url_for('static', filename='img/avatar.png') }}" alt="Avatar" class="avatar">
+                <h3 class="user-name">{{ username }}</h3>
+                <span class="role-badge">{{ role }}</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#" data-section="preview" class="nav-link active">Template Preview</a>
+                <a href="#" data-section="about" class="nav-link">About</a>
+                <a href="#" data-section="admin" class="nav-link admin-only hidden">Admin</a>
+            </nav>
+            <button id="logout-btn" class="btn btn-danger">Logout</button>
+        </aside>
+        
+        <main class="main-content">
+            <section id="preview-section" class="dashboard-section active">
+                <h2 class="section-title">SecureDash</h2>
+                <p class="section-subtitle">Leave your mark here please</p>
+                <div class="card preview-form">
+                    <textarea id="template-input" rows="5" placeholder="Enter your mark..."></textarea>
+                    <button id="preview-btn" class="btn btn-primary">Preview</button>
+                </div>
+                <div class="card preview-output">
+                    <h3>Preview Result</h3>
+                    <pre id="preview-display"></pre>
+                </div>
+            </section>
+            
+            <section id="about-section" class="dashboard-section">
+                <h2 class="section-title">About SecureDash</h2>
+                <p class="section-subtitle">SecureDash now includes a powerful template engine!</p>
+            </section>
+            
+            <section id="admin-section" class="dashboard-section">
+                <h2 class="section-title">Admin Panel</h2>
+				<p class="section-subtitle">You are just wasting your time, nothing is here!</p>
+            </section>
+        </main>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

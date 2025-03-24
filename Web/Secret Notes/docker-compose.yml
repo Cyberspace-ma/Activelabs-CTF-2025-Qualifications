@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  secretnotes:
+    build: .
+    ports:
+      - "5501-5550:5000"
+    deploy:
+      replicas: 50
+    restart: always
+    volumes:
+      - ./templates:/app/templates

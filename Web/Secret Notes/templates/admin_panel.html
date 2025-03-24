@@ -1,0 +1,43 @@
+<!-- templates/admin_panel.html -->
+{% extends "layout.html" %}
+{% block title %}Admin Panel{% endblock %}
+{% block content %}
+<h1 class="mb-4">Admin Panel</h1>
+
+<ul class="nav nav-tabs mb-4">
+    <li class="nav-item">
+        <a class="nav-link active" href="{{ url_for('admin_panel') }}">Users</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('admin_notes') }}">Notes</a>
+    </li>
+</ul>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="mb-0">User Management</h5>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Admin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for user in users %}
+                    <tr>
+                        <td>{{ user[0] }}</td>
+                        <td>{{ user[1] }}</td>
+                        <td>{{ "Yes" if user[2] else "No" }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

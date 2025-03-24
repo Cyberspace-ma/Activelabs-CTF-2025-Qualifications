@@ -1,0 +1,25 @@
+<!-- templates/new_note.html -->
+{% extends "layout.html" %}
+{% block title %}New Note{% endblock %}
+{% block content %}
+<h1 class="mb-4">Create a New Note</h1>
+
+<div class="card">
+    <div class="card-body">
+        <form method="post" action="{{ url_for('new_note') }}">
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="title" name="title" required>
+            </div>
+            <div class="mb-3">
+                <label for="content" class="form-label">Content</label>
+                <textarea class="form-control" id="content" name="content" rows="5" required></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Save Note</button>
+                <a href="{{ url_for('dashboard') }}" class="btn btn-outline-secondary">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

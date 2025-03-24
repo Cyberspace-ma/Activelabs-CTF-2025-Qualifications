@@ -1,0 +1,45 @@
+<!-- templates/admin_notes.html -->
+{% extends "layout.html" %}
+{% block title %}Admin Notes{% endblock %}
+{% block content %}
+<h1 class="mb-4">Admin Panel</h1>
+
+<ul class="nav nav-tabs mb-4">
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('admin_panel') }}">Users</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="{{ url_for('admin_notes') }}">Notes</a>
+    </li>
+</ul>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="mb-0">All Notes</h5>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>User</th>
+                        <th>Title</th>
+                        <th>Content</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for note in notes %}
+                    <tr>
+                        <td>{{ note[0] }}</td>
+                        <td>{{ note[1] }}</td>
+                        <td>{{ note[2] }}</td>
+                        <td>{{ note[3] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

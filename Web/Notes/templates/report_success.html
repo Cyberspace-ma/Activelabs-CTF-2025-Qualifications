@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report Submitted</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Report Submitted</h1>
+        
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                {% if session.username %}
+                <li class="nav-item"><a class="nav-link" href="/profile">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+                {% else %}
+                <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+        
+        <div class="mt-4 alert alert-success">
+            <p>Thank you for reporting this comment. An admin will review it shortly.</p>
+            <a href="/" class="btn btn-primary">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!-- templates/profile.html -->
+{% extends "layout.html" %}
+{% block title %}Profile{% endblock %}
+{% block content %}
+<h1 class="mb-4">Your Profile</h1>
+
+<div class="card mb-4">
+    <div class="card-header">
+        <h5 class="mb-0">Account Information</h5>
+    </div>
+    <div class="card-body">
+        <p><strong>Username:</strong> {{ session.get('username') }}</p>
+        <a href="{{ url_for('change_password_form') }}" class="btn btn-primary">Change Password</a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="mb-0">Security Settings</h5>
+    </div>
+    <div class="card-body">
+        <form method="post" action="{{ url_for('profile') }}">
+            <div class="mb-3">
+                <label for="new_password" class="form-label">Update Password</label>
+                <input type="password" class="form-control" id="new_password" name="new_password" required>
+                <div class="form-text">Enter your new password.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Update Password</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

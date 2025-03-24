@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Chakra Petch", serif;
+    background: linear-gradient(145deg, #121212, #1e1e1e);
+    margin: 0;
+    padding: 0;
+    color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* Styling for flash messages */
+.flash-messages {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.alert {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border-color: #bee5eb;
+}
+
+.alert-success {
+    background-color: #d4dced;
+    color: #6e9bf0;
+    border-color: #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+/* Styling for buttons */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #a7d6ff;
+    color: white;
+}
+
+.flash-messages li {
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card {
+    background: linear-gradient(145deg, #1f1f1f, #2a2a2a);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4), inset 0px 1px 4px rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.6), inset 0px 1px 4px rgba(255, 255, 255, 0.2);
+}
+
+h1, h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+p {
+    font-size: 1rem;
+    color: #bcbcbc;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #cfcfcf;
+}
+
+input[type="text"], input[type="password"], textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background-color: #2b2b2b;
+    color: #eaeaea;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.6);
+}
+
+textarea {
+    font-size: 0.9rem;
+    resize: vertical;
+    background-color: #2b2b2b;
+    border: 1px solid transparent;
+    color: #eaeaea;
+    border-radius: 12px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.6);
+}
+
+button {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+.token-card textarea {
+    cursor: not-allowed;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    width: 45%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: #333;
+}
+
+.btn.primary {
+    background-color: #007BFF;
+}
+
+.btn.primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.6);
+}
+
+.btn.secondary {
+    background-color: #aed9ff;
+}
+
+.btn.secondary:hover {
+    background-color: #5a6268;
+    box-shadow: 0px 0px 10px rgba(108, 117, 125, 0.6);
+}
+
+@media (max-width: 600px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}

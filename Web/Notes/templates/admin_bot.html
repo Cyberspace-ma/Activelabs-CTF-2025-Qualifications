@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Bot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Admin Bot - Automated Review</h1>
+        
+        <div class="alert alert-info">
+            <p>Admin bot that reviews reported comments automatically.</p>
+            <p>Flag: {{ FLAG }}</p>
+        </div>
+        
+        <div id="reported-content">
+            <h2>Processing reported comments...</h2>
+        </div>
+        
+        <script>
+            function loadReportedComments() {
+                console.log("Admin session active with flag: {{ FLAG }}");
+                document.getElementById('reported-content').innerHTML = "All reported comments have been processed.";
+            }
+            
+            window.onload = loadReportedComments;
+        </script>
+    </div>
+</body>
+</html>

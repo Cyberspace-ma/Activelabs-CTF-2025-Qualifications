@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+    <script>
+        // Fetches user data from the API with user-controlled parameter
+        function fetchUserData() {
+            const callback = new URLSearchParams(window.location.search).get('callback') || 'processData';
+            const script = document.createElement('script');
+            script.src = `/api/user_info?callback=${callback}`;
+            document.body.appendChild(script);
+        }
+        
+        // Callback function for JSONP
+        function processData(data) {
+            document.getElementById('username-display').textContent = data.username;
+            document.getElementById('role-display').textContent = data.role;
+        }
+        
+        // Load user data when page loads
+        window.onload = fetchUserData;
+    </script>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Profile</h1>
+        
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/profile">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+        
+        <div class="mt-4">
+            <h2>Welcome, <span id="username-display">{{ username }}</span>!</h2>
+            <p>Role: <span id="role-display">{{ role }}</span></p>
+            
+            {% if role == "admin" %}
+            <div class="alert alert-info">
+                <a href="/admin/reports" class="btn btn-primary">View Reported Comments</a>
+            </div>
+            {% endif %}
+            
+            <h3>My Notes</h3>
+            <ul class="list-group">
+                {% for note in notes %}
+                <li class="list-group-item">{{ note }}</li>
+                {% else %}
+                <li class="list-group-item">No notes yet.</li>
+                {% endfor %}
+            </ul>
+            
+            <div class="mt-3">
+                <h4>Add Note</h4>
+                <form action="/add_note" method="post">
+                    <div class="mb-3">
+                        <textarea class="form-control" name="note" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Note</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

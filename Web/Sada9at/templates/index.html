@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <script src="/static/js.js"></script>
+  <style>
+    :root {
+      --primary-color: #0077cc;
+      --primary-light: #0095ff;
+      --dark-bg: #00172d;
+      --card-bg: #002a3e;
+      --input-bg: #00395a;
+      --text-color: #ffffff;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: var(--dark-bg);
+      color: var(--text-color);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 360px;
+      padding: 30px;
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .logo {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px rgba(0, 119, 204, 0.3);
+	  text-align: left;
+    }
+    
+    h2 {
+      margin-bottom: 25px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+	  text-align: left;
+    }
+    
+    .input-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    
+    input {
+      width: 100%;
+      padding: 15px 20px;
+      background: var(--input-bg);
+      border: 1px solid rgba(0, 119, 204, 0.3);
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      transition: all 0.3s;
+    }
+    
+    input:focus {
+      outline: none;
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.2);
+    }
+    
+    input::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    
+    button {
+      background: var(--primary-color);
+      color: white;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-top: 10px;
+    }
+    
+    button:hover {
+      background: var(--primary-light);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    button:active {
+      transform: translateY(0);
+    }
+    
+    #error-msg {
+      color: #ff4d4d;
+      margin-top: 15px;
+      font-size: 14px;
+      min-height: 20px;
+    }
+    
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .footer a {
+      color: var(--primary-light);
+      text-decoration: none;
+	  text-align: left;
+    }
+    
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">🔐</div>
+    <h2>Login</h2>
+    
+    <div class="input-group">
+      <input type="text" id="username" placeholder="username" autocomplete="username">
+    </div>
+    
+    <div class="input-group">
+      <input type="password" id="password" placeholder="p@ssw0rd" autocomplete="current-password">
+    </div>
+    
+    <button id="login-btn">Login</button>
+    
+    <p id="error-msg"></p>
+    
+    <div class="footer">
+      <a href="#">Forget Password?</a>
+    </div>
+  </div>
+</body>
+</html>

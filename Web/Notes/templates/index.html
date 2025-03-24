@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure Comment System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+    <style>
+        .comment {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        .username {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Secure Comment System</h1>
+        
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                {% if session.username %}
+                <li class="nav-item"><a class="nav-link" href="/profile">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+                {% else %}
+                <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+        
+        <div class="mt-4">
+            <h2>Leave a Comment</h2>
+            {% if error %}
+            <div class="alert alert-danger">{{ error }}</div>
+            {% endif %}
+            <form action="/add_comment" method="post">
+                <div class="mb-3">
+                    <textarea class="form-control" name="content" rows="3" required></textarea>
+                    <small class="text-muted">You can use some HTML for formatting.</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        
+        <div class="mt-4">
+            <h2>Comments</h2>
+            {% for comment in comments %}
+            <div class="comment">
+                <div class="comment-header">
+                    <span class="username">{{ comment.username }}</span>
+                    <a href="/report_comment/{{ comment.id }}" class="btn btn-sm btn-warning">Report</a>
+                </div>
+                <div class="comment-content">
+                    {{ comment.content|safe }}
+                </div>
+            </div>
+            {% endfor %}
+            {% if not comments %}
+            <p>No comments yet.</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

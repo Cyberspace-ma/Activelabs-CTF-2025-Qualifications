@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Reports</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Reported Comments</h1>
+        
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/profile">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+        
+        <div class="mt-4">
+            <h2>Reported Comments</h2>
+            {% if reported_comments %}  <!-- Add this if block -->
+                {% for comment in reported_comments %}
+                <div class="comment border p-3 mb-3">
+                    <div class="comment-header d-flex justify-content-between">
+                        <span class="username">{{ comment.username }}</span>
+                        <a href="/admin/view_comment/{{ comment.id }}" class="btn btn-sm btn-info">View Details</a>
+                    </div>
+                    <div class="comment-content mt-2">
+                        <p><strong>Content Preview:</strong> {{ comment.content|truncate(50) }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}  <!-- Add this else block -->
+                <p>No reported comments.</p>
+            {% endif %}  <!-- Close the if block -->
+        </div>
+    </div>
+</body>
+</html>

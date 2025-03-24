@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Authentication Challenge</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul class="flash-messages">
+            {% for message in messages %}
+            <li class="alert alert-info">{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+
+        <div class="form-card">
+            <h1>Sign In</h1>
+            <form method="POST" class="form">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+
+        <p class="redirect-text">Don’t have an account? <a style="color: white;" href="{{ url_for('register') }}">Register here</a>.</p>
+    </div>
+</body>
+</html>

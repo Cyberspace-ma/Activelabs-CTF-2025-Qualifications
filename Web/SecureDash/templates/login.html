@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureDash - Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="auth-wrapper">
+        <div class="auth-card">
+            <h1 class="auth-title">SecureDash Login</h1>
+            <p class="auth-subtitle">Access your secure dashboard</p>
+            <form id="login-form" class="auth-form">
+                <div class="form-group">
+                    <input type="text" id="login-username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="login-password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <p class="auth-link">Need an account? <a href="/register">Register here</a></p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

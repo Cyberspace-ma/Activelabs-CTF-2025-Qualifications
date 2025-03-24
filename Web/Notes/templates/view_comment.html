@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Comment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>View Reported Comment</h1>
+        
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/profile">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="/admin/reports">Back to Reports</a></li>
+                <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+            </ul>
+        </nav>
+        
+        <div class="mt-4">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between">
+                    <span>Comment by {{ comment.username }}</span>
+                    <a href="/admin/delete_comment/{{ comment.id }}" class="btn btn-sm btn-danger">Delete Comment</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Comment Content:</h5>
+                    <div class="alert alert-secondary">
+                        {{ comment.content|safe }}
+                    </div>
+                    
+                    <h5 class="card-title mt-4">Raw Content:</h5>
+                    <pre class="bg-light p-3"><code>{{ comment.raw_content }}</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

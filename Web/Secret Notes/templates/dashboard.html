@@ -1,0 +1,32 @@
+<!-- templates/dashboard.html -->
+{% extends "layout.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<h1 class="mb-4">Your Notes</h1>
+
+<div class="mb-4">
+    <a href="{{ url_for('new_note') }}" class="btn btn-primary">New Note</a>
+</div>
+
+{% if notes %}
+<div class="row">
+    {% for note in notes %}
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title mb-0">{{ note[1] }}</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{ note[2][:100] }}{% if note[2]|length > 100 %}...{% endif %}</p>
+                <a href="{{ url_for('view_note', note_id=note[0]) }}" class="btn btn-sm btn-outline-primary">View</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<div class="alert alert-info">
+    You don't have any notes yet. <a href="{{ url_for('new_note') }}">Create one</a>!
+</div>
+{% endif %}
+{% endblock %}

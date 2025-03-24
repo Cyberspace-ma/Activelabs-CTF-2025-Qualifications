@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <style>
+    :root {
+      --primary-color: #0077cc;
+      --primary-light: #0095ff;
+      --dark-bg: #00172d;
+      --card-bg: #002a3e;
+      --text-color: #ffffff;
+      --accent-color: #00c3ff;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: var(--dark-bg);
+      color: var(--text-color);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background-image: radial-gradient(circle at 10% 20%, rgba(0, 42, 62, 0.8) 0%, rgba(0, 23, 45, 0.8) 90%);
+      line-height: 1.6;
+    }
+    
+    .dashboard-container {
+      width: 100%;
+      max-width: 800px;
+      padding: 40px;
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .dashboard-header {
+      margin-bottom: 30px;
+      position: relative;
+      padding-bottom: 15px;
+    }
+    
+    .dashboard-header:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 3px;
+      background: var(--accent-color);
+      border-radius: 3px;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: var(--primary-light);
+      letter-spacing: 1px;
+    }
+    
+    .welcome-message {
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 40px;
+    }
+    
+    .secret-container {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 4px solid var(--accent-color);
+      margin-top: 30px;
+      text-align: left;
+    }
+    
+    .secret-label {
+      display: block;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      color: var(--accent-color);
+    }
+    
+    .secret-value {
+      font-family: 'Courier New', monospace;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 15px;
+      border-radius: 5px;
+      font-size: 1rem;
+      color: #ffffff;
+      word-break: break-all;
+      position: relative;
+    }
+    
+    .copy-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      transition: all 0.2s;
+    }
+    
+    .copy-btn:hover {
+      background: var(--primary-light);
+    }
+    
+    .dashboard-footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    
+    @media (max-width: 600px) {
+      .dashboard-container {
+        padding: 25px;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="dashboard-header">
+      <h1>Dashboard</h1>
+      <p class="welcome-message">Welcome to your dashboard!</p>
+    </div>
+    
+    <div class="secret-container">
+      <span class="secret-label">Your Secret Key:</span>
+      <div class="secret-value">
+        Q1NQe1NhZGE5YV9maGFkX1JAbWFkNG59
+        <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
+      </div>
+    </div>
+    
+    <div class="dashboard-footer">
+      © 2025 All Rights Reserved
+    </div>
+  </div>
+  
+  <script>
+    function copyToClipboard() {
+      const secretText = document.querySelector('.secret-value').textContent.trim();
+      navigator.clipboard.writeText(secretText)
+        .then(() => {
+          const btn = document.querySelector('.copy-btn');
+          const originalText = btn.textContent;
+          btn.textContent = 'Copied!';
+          setTimeout(() => {
+            btn.textContent = originalText;
+          }, 2000);
+        });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication | Challenge</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul class="flash-messages">
+            {% for message in messages %}
+            <li class="alert alert-info">{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+
+        {% if username %}
+            <header class="header">
+                <h1>Welcome, {{ username }}!</h1>
+                <p>I hope you are enjoying my challenges!<br> I've nothing for you here I'm sorry :(</p>
+                <a href="{{ url_for('logout') }}" class="btn btn-secondary">Logout</a>
+                <!--CSP{F4ke_flhhhhhg}-->
+            </header>
+        {% else %}
+            <div class="card">
+                <h1>Welcome to the Authentication Challenge!</h1>
+                <p>Test your skills by exploring a unique login technology. Can you uncover its hidden vulnerabilities?</p>
+                <div class="button-group">
+                    <a href="{{ url_for('login') }}" class="btn btn-primary">Login</a>
+                    <a href="{{ url_for('register') }}" class="btn btn-secondary">Register</a>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+
+    <!-- JavaScript Code o sf -->
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                const flashMessages = document.querySelectorAll('.flash-messages .alert');
+                flashMessages.forEach(function(message) {
+                    message.style.opacity = '0';
+                });
+            }, 2000);
+        };
+    </script>
+</body>
+</html>

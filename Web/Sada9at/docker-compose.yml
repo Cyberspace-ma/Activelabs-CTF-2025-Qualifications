@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  sada9at:
+    build: .
+    ports:
+      - "5901:9000"
+    deploy:
+      replicas: 1
+    restart: always
+    volumes:
+      - ./templates:/app/templates
+      - ./static:/app/static

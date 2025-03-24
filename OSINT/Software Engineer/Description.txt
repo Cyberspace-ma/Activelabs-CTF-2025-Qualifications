@@ -1,0 +1,14 @@
+A Software Engineer shared a photo with the caption: **'1 hacker way'**  
+Can you find out where it was taken? Company Name, And Creation Date of the campus!
+
+### **Flag Format**  
+`CSP{city_companyname_YYYY}`  
+*Note: Only lowercase letters are allowed!*
+
+---
+
+### **Challenge Details**  
+- **Author:** Yahya EL OURDIGHI
+- **Difficulty:** Easy Peasy!
+- **Level**: Beginner
+- **Skills:** Geolocation Research, Company Investigation, Data Analysis.
