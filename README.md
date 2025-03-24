@@ -15,21 +15,21 @@ Welcome to the **Activelabs CTF 2025**! This Capture the Flag event brings you a
 |             | [SecureDash](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Web/SecureDash)        | 272    | 13     | 0xY47     |
 | **MISC**    | ASN               | 180    | 9      | 0xY47     |
 |             | Cartouches        | 247    | 6      | 0xY47     |
-|             | Corrupted-QR      | 417    | 3      | 0xY47     |
+|             | Corrupted-QR      | 417    | 3      | Mr_Togoo  |
 |             | QR Communication  | 325    | 7      | 0xY47     |
 |             | Warmup            | 500    | 0      | 0xY47     |
 |             | Wazuh             | 311    | 8      | 0xY47     |
 | **OSINT**   | CTI 🛏️           | 417    | 3      | 0xY47     |
 |             | cyberspace.ma     | 256    | 19     | 0xY47     |
 |             | Software Engineer | 102    | 26     | 0xY47     |
-|             | Activelabs        | 500    | 0      | Mr Togoo  |
-|             | No Racism         | 407    | 14     | Mr Togoo  |
-| **DFIR**    | InfraBroken       | 417    | 3      | Mr Togoo  |
-|             | Moha9i9Konan      | 500    | 0      | Mr Togoo  |
-|             | SMILAH            | 233    | 12     | Mr Togoo  |
-| **Reverse** | Dummy Dummy       | 249    | 10     | Mr Togoo  |
-|             | Snake             | 144    | 12     | Mr Togoo  |
-|             | Togoo             | 237    | 7      | Mr Togoo  |
+|             | Activelabs        | 500    | 0      | Mr_Togoo  |
+|             | No Racism         | 407    | 14     | Mr_Togoo  |
+| **DFIR**    | InfraBroken       | 417    | 3      | Mr_Togoo  |
+|             | Moha9i9Konan      | 500    | 0      | Mr_Togoo  |
+|             | SMILAH            | 233    | 12     | Mr_Togoo  |
+| **Reverse** | Dummy Dummy       | 249    | 10     | Mr_Togoo  |
+|             | Snake             | 144    | 12     | Mr_Togoo  |
+|             | Togoo             | 237    | 7      | Mr_Togoo  |
 | **Pwn**     | I'M SICK          | 180    | 9      | THE-GOAT  |
 |             | PUNCH&PUNCH       | 436    | 6      | THE-GOAT  |
 |             | USEME             | 341    | 6      | THE-GOAT  |
