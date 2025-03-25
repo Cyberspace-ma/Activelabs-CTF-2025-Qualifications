@@ -18,8 +18,8 @@ Welcome to the **Activelabs CTF 2025**! This Capture the Flag event brings you a
 |             | [Corrupted-QR](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/MISC/Corrupted-QR)      | 417    | 3      | Mr_Togoo  |
 |             | [QR Communication](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/MISC/QR%20COMMUNICATION)  | 325    | 7      | 0xY47     |
 |             | [Warmup](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/MISC/Warmup)            | 500    | 0      | 0xY47     |
-|             | Wazuh             | 311    | 8      | 0xY47     |
-| **OSINT**   | CTI 🛏️           | 417    | 3      | 0xY47     |
+|             | [Wazuh](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/MISC/Wazuh)             | 311    | 8      | 0xY47     |
+| **OSINT**   | CTI 🔎           | 417    | 3      | 0xY47     |
 |             | cyberspace.ma     | 256    | 19     | 0xY47     |
 |             | Software Engineer | 102    | 26     | 0xY47     |
 |             | Activelabs        | 500    | 0      | Mr_Togoo  |
