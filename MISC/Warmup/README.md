@@ -14,7 +14,8 @@ Upon inspecting the hex data, we immediately notice something unusual:
 - The file **appears to be a PNG**  
 - However, the **PNG header is missing**  
 
-![first part missing](https://github.com/user-attachments/assets/03e1a142-a8ad-4ed2-933c-569fbd2c667f)
+![missing part](https://github.com/user-attachments/assets/e8af379e-64ef-4de8-b16c-d3fe35dee39e)
+
 
 
 ---
