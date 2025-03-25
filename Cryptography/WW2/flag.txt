@@ -1,4 +1,0 @@
-Encrypted Flag: DIU{EKUATY_RIODK_ZNM_DZXJTG}
-hint:
-"The first rotor might start with 'EKMF...' and ends with '...RCJ'."
-"the rotors are not in the correct order fix them"
