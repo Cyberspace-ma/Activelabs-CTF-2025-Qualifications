@@ -13,11 +13,11 @@ Welcome to the **Activelabs CTF 2025**! This Capture the Flag event brings you a
 |             | [Sada9at](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Web/Sada9at)           | 101    | 30     | 0xY47     |
 |             | [Secret Notes](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Web/Secret%20Notes)      | 265    | 15     | 0xY47     |
 |             | [SecureDash](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Web/SecureDash)        | 272    | 13     | 0xY47     |
-| **MISC**    | ASN               | 180    | 9      | 0xY47     |
-|             | Cartouches        | 247    | 6      | 0xY47     |
-|             | Corrupted-QR      | 417    | 3      | Mr_Togoo  |
-|             | QR Communication  | 325    | 7      | 0xY47     |
-|             | Warmup            | 500    | 0      | 0xY47     |
+| **MISC**    | [ASN](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/MISC/ASN)               | 180    | 9      | 0xY47     |
+|             | [Cartouches](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/MISC/Cartouches)        | 247    | 6      | 0xY47     |
+|             | [Corrupted-QR](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/MISC/Corrupted-QR)      | 417    | 3      | Mr_Togoo  |
+|             | [QR Communication](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/MISC/QR%20COMMUNICATION)  | 325    | 7      | 0xY47     |
+|             | [Warmup](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/MISC/Warmup)            | 500    | 0      | 0xY47     |
 |             | Wazuh             | 311    | 8      | 0xY47     |
 | **OSINT**   | CTI 🛏️           | 417    | 3      | 0xY47     |
 |             | cyberspace.ma     | 256    | 19     | 0xY47     |
