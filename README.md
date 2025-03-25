@@ -19,17 +19,17 @@ Welcome to the **Activelabs CTF 2025**! This Capture the Flag event brings you a
 |             | [QR Communication](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/MISC/QR%20COMMUNICATION)  | 325    | 7      | 0xY47     |
 |             | [Warmup](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/MISC/Warmup)            | 500    | 0      | 0xY47     |
 |             | [Wazuh](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/MISC/Wazuh)             | 311    | 8      | 0xY47     |
-| **OSINT**   | CTI 🔎           | 417    | 3      | 0xY47     |
-|             | cyberspace.ma     | 256    | 19     | 0xY47     |
-|             | Software Engineer | 102    | 26     | 0xY47     |
+| **OSINT**   | [CTI 🔎](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/OSINT/CTI)           | 417    | 3      | 0xY47     |
+|             | [cyberspace.ma](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/OSINT/cyberspace.ma)     | 256    | 19     | 0xY47     |
+|             | [Software Engineer](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/OSINT/Software%20Engineer) | 102    | 26     | 0xY47     |
 |             | Activelabs        | 500    | 0      | Mr_Togoo  |
 |             | No Racism         | 407    | 14     | Mr_Togoo  |
-| **DFIR**    | InfraBroken       | 417    | 3      | Mr_Togoo  |
-|             | Moha9i9Konan      | 500    | 0      | Mr_Togoo  |
-|             | SMILAH            | 233    | 12     | Mr_Togoo  |
-| **Reverse** | Dummy Dummy       | 249    | 10     | Mr_Togoo  |
-|             | Snake             | 144    | 12     | Mr_Togoo  |
-|             | Togoo             | 237    | 7      | Mr_Togoo  |
+| **DFIR**    | [InfraBroken](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/DFIR/InfraBroken)       | 417    | 3      | Mr_Togoo  |
+|             | [Moha9i9Konan](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/DFIR/Moha9i9Konan)      | 500    | 0      | Mr_Togoo  |
+|             | [SMILAH](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/DFIR/SMILAH)            | 233    | 12     | Mr_Togoo  |
+| **Reverse** | [Dummy Dummy](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Reverse/Dummy%20Dummy)       | 249    | 10     | Mr_Togoo  |
+|             | [Snake](#)             | 144    | 12     | Mr_Togoo  |
+|             | [Togoo](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Reverse/Togoo)             | 237    | 7      | Mr_Togoo  |
 | **Pwn**     | I'M SICK          | 180    | 9      | THE-GOAT  |
 |             | PUNCH&PUNCH       | 436    | 6      | THE-GOAT  |
 |             | USEME             | 341    | 6      | THE-GOAT  |
@@ -46,13 +46,13 @@ Welcome to the **Activelabs CTF 2025**! This Capture the Flag event brings you a
 
 ## Table of Contents
 
-- [Cryptography](#)
-- [DFIR](#)
+- [Cryptography](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Cryptography)
+- [DFIR](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/DFIR)
 - [Web](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Web)
-- [MISC](#)
-- [OSINT](#)
+- [MISC](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/MISC)
+- [OSINT](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/OSINT)
 - [PWN](#)
-- [Reverse Engineering](#)
+- [Reverse Engineering](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Reverse)
 
 ---
 
