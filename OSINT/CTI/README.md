@@ -66,7 +66,9 @@ CSP{2020-12-07_fr_opencti_samuelhassine_
 ### **Step 4: Finding the Earliest Release Version & Date**  
 
 Looking at OpenCTI's **GitHub repository**, we check for the **first commit**, which was made by **Samuel Hassine** on:  
-![famous platform](https://github.com/user-attachments/assets/d18d7686-8a41-4e68-90bc-b4dbd15effd7)
+
+![first commit](https://github.com/user-attachments/assets/0dd8d21b-174a-47bc-83e4-d3c4774de620)
+
 
 
 
