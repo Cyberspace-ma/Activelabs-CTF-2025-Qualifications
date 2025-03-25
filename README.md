@@ -2,7 +2,7 @@
 
 Welcome to the **Activelabs CTF 2025**! This Capture the Flag event brings you a wide variety of challenges across different categories, including Cryptography, DFIR, Web Security, MISC, OSINT, PWN, and Reverse Engineering. Explore each challenge, solve puzzles, and advance through the stages to claim your victory!
 
-![poster](https://github.com/user-attachments/assets/1464ff66-58d6-4530-a97d-ab76a80ef6e1)
+![poster 1](https://github.com/user-attachments/assets/c995a970-7ac7-4690-b8d2-2ba081e2794f)
 
 
 # Activelabs CTF 2025 - QUALIFICATIONS
