@@ -1,6 +1,7 @@
 # **CTI Challenge**  
 
 A cybersecurity company has been making waves with its platform. Can you uncover key details about its origins?  
+
 ![logo (2)](https://github.com/user-attachments/assets/76416769-c9e5-496a-8cfa-393130a4e6de)
 
 ---
@@ -18,6 +19,7 @@ CSP{EarliestDomainRegistration_Country_TheirFamousPlatformName_CEOName_EarliestR
 ### **Step 1: Finding the Domain Registration Date**  
 
 To determine the **earliest domain registration**, we perform a **WHOIS lookup** on `filigran.io`.  
+
 ![filigran 1](https://github.com/user-attachments/assets/8fb9d4c1-7564-4eee-9f10-4083aa8e8d6b)
 
 From the lookup, we find that **Filigran.io** was registered on:  
@@ -36,7 +38,9 @@ CSP{2020-12-07_fr_
 ### **Step 2: Identifying Their Famous Platform**  
 
 Filigran is well known for its **OpenCTI** platform.  
-![filigran 1](https://github.com/user-attachments/assets/1dd52d04-f2c1-4e41-9c60-3ecb3de89e9a)
+
+![famous platform](https://github.com/user-attachments/assets/25c5f720-930e-457b-a0be-7962c62b5cdf)
+
 
 **Updated flag:**  
 ```
@@ -62,7 +66,8 @@ CSP{2020-12-07_fr_opencti_samuelhassine_
 ### **Step 4: Finding the Earliest Release Version & Date**  
 
 Looking at OpenCTI's **GitHub repository**, we check for the **first commit**, which was made by **Samuel Hassine** on:  
-![CEO Name](https://github.com/user-attachments/assets/3844cdda-8109-4eb6-b6e0-d42b4be4703d)
+![famous platform](https://github.com/user-attachments/assets/d18d7686-8a41-4e68-90bc-b4dbd15effd7)
+
 
 
 📅 **June 28, 2019**  
