@@ -22,21 +22,22 @@ Welcome to the **Activelabs CTF 2025**! This Capture the Flag event brings you a
 | **OSINT**   | [CTI 🔎](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/OSINT/CTI)           | 417    | 3      | 0xY47     |
 |             | [cyberspace.ma](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/OSINT/cyberspace.ma)     | 256    | 19     | 0xY47     |
 |             | [Software Engineer](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/OSINT/Software%20Engineer) | 102    | 26     | 0xY47     |
-|             | Activelabs        | 500    | 0      | Mr_Togoo  |
-|             | No Racism         | 407    | 14     | Mr_Togoo  |
+|             | [Activelabs](#)        | 500    | 0      | Mr_Togoo  |
+|             | [No Racism](#)         | 407    | 14     | Mr_Togoo  |
 | **DFIR**    | [InfraBroken](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/DFIR/InfraBroken)       | 417    | 3      | Mr_Togoo  |
 |             | [Moha9i9Konan](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/DFIR/Moha9i9Konan)      | 500    | 0      | Mr_Togoo  |
 |             | [SMILAH](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/DFIR/SMILAH)            | 233    | 12     | Mr_Togoo  |
 | **Reverse** | [Dummy Dummy](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Reverse/Dummy%20Dummy)       | 249    | 10     | Mr_Togoo  |
-|             | [Snake](#)             | 144    | 12     | Mr_Togoo  |
+|             | [Snake](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Reverse/Snake)             | 144    | 12     | Mr_Togoo  |
 |             | [Togoo](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Reverse/Togoo)             | 237    | 7      | Mr_Togoo  |
-| **Pwn**     | I'M SICK          | 180    | 9      | THE-GOAT  |
-|             | PUNCH&PUNCH       | 436    | 6      | THE-GOAT  |
-|             | USEME             | 341    | 6      | THE-GOAT  |
-| **Crypto**  | BASE              | 100    | 31     | THE-GOAT  |
-|             | RSA               | 407    | 14     | THE-GOAT  |
-|             | SWEETS            | 325    | 7      | THE-GOAT  |
-|             | WW2               | 260    | 17     | THE-GOAT  |
+| **Pwn**     | [I'M SICK](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/PWN/SICK)          | 180    | 9      | THE-GOAT  |
+|             | [PUNCH&PUNCH](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/PWN/PUNSH)       | 436    | 6      | THE-GOAT  |
+|             | [USEME](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/PWN/USEME)             | 341    | 6      | THE-GOAT  |
+| **Crypto**  | [BASE](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Cryptography/BASE)              | 100    | 31     | THE-GOAT  |
+|             | [RSA](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Cryptography/RSA)               | 407    | 14     | THE-GOAT  |
+|             | [SWEETS](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Cryptography/SWEETS)            | 325    | 7      | THE-GOAT  |
+|             | [WW2](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Cryptography/ENIGMA)               | 260    | 17     | THE-GOAT  |
+
 
 ## Authors:
 
@@ -51,7 +52,7 @@ Welcome to the **Activelabs CTF 2025**! This Capture the Flag event brings you a
 - [Web](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Web)
 - [MISC](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/MISC)
 - [OSINT](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/OSINT)
-- [PWN](#)
+- [PWN](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/PWN)
 - [Reverse Engineering](https://github.com/Cyberspace-ma/Activelabs-CTF-2025-Qualifications/tree/main/Reverse)
 
 ---
